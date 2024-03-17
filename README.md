@@ -5,6 +5,8 @@ Static Tailwind CSS Framework Theme - Manage
 ### Resources
 
 - [Tailwind CSS](https://tailwindcss.com)
+- [Google Fonts: Righteous](https://fonts.google.com/specimen/Righteous)
+- [Google Fonts: Mukta](https://fonts.google.com/specimen/Mukta)
 
 <!--
 

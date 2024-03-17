@@ -1,3 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  a,
+  button {
+    @apply transition-all duration-300 ease-out;
+  }
+  .nav__btn {
+    @apply bg-transparent rounded-full py-1 px-3 text-themeBlueDark hover:bg-themeRedPale;
+  }
+}
+
+html,
+body {
+  @apply font-mukta;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-righteous;
+}

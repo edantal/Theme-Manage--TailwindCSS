@@ -20,6 +20,10 @@ module.exports = {
         themeGrayLight: 'hsl(0, 0%, 98%)',
       },
     },
+    fontFamily: {
+      righteous: ['Righteous, sans-serif'],
+      mukta: ['Mukta, sans-serif'],
+    },
   },
   plugins: [],
 }
