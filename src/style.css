@@ -10,11 +10,17 @@
     @apply transition-all duration-300 ease-out;
   }
   .nav__btn {
-    @apply bg-transparent rounded-full py-1 px-3 text-themeColor2Gray hover:bg-themeColor1Light hover:text-white;
+    @apply bg-transparent rounded-full py-1 px-3 text-themeColor2Dark hover:bg-themeColor1Light hover:text-white;
+  }
+}
+
+@layer utilities {
+  .name__text {
+    @apply text-themeColor1 font-medium uppercase;
   }
 }
 
 html,
 body {
-  @apply font-montserrat;
+  @apply font-montserrat text-themeColor2Dark;
 }
