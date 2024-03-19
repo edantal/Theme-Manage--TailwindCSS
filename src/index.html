@@ -7,12 +7,14 @@
 
     <link href="../dist/style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body
+    class="bg-body bg-no-repeat bg-[50px_-50px] md:bg-[90%_-25%] bg-[length:500px] sm:bg-[length:800px]"
+  >
     <!--~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~-->
     <nav class="relative container mx-auto p-6">
       <div class="flex items-center justify-between">
         <div class="pt-2">
-          <img src="assets/images/logo.svg" alt="Logo" />
+          <img src="../dist/assets/images/logo.svg" alt="Logo" />
         </div>
         <div class="nav hidden md:flex space-x-6 text-sm uppercase">
           <a href="#" class="nav__btn">Über uns</a>
@@ -26,6 +28,26 @@
         >
           Jetzt loslegen
         </a>
+
+        <button
+          id="menu-btn"
+          class="block menu__btn md:hidden focus:outline-none"
+        >
+          <span class="menu__btn--top"></span>
+          <span class="menu__btn--middle"></span>
+          <span class="menu__btn--bottom"></span>
+        </button>
+      </div>
+
+      <div class="md:hidden">
+        <div
+          id="nav-menu"
+          class="absolute flex flex-col items-center self-end sm:self-center sm:w-auto py-8 space-y-6 font-bold bg-white -top-56 left-6 right-6 drop-shadow-md transition-all duration-300"
+        >
+          <a href="#" class="nav__btn">Über uns</a>
+          <a href="#" class="nav__btn">Produkt</a>
+          <a href="#" class="nav__btn">Kontakt</a>
+        </div>
       </div>
     </nav>
 
@@ -58,7 +80,7 @@
         </div>
 
         <div class="md:w-1/2">
-          <img src="assets//images/illustration-intro.svg" alt="" />
+          <img src="../dist/assets/images/illustration-intro.svg" alt="" />
         </div>
       </div>
     </section>
@@ -228,7 +250,10 @@
     </section>
 
     <!--~~~~~~~~~~~~~~~ CTA ~~~~~~~~~~~~~~~-->
-    <section id="cta" class="bg-themeColor1">
+    <section
+      id="cta"
+      class="bg-themeColor1 bg-cta-mobile md:bg-cta-desktop bg-no-repeat"
+    >
       <div
         class="container flex flex-col md:flex-row items-center justify-between mx-auto px-6 py-24 md:py-12 space-y-12 md:space-y-0"
       >
@@ -263,7 +288,7 @@
           </div>
           <div class="w-[380px] md:w-[200px]">
             <img
-              src="assets/images/logo-white.svg"
+              src="../dist/assets/images/logo-white.svg"
               alt=""
               class="mx-auto md:mx-0 object-contain"
             />
@@ -271,35 +296,35 @@
           <div class="flex justify-center space-x-4">
             <a href="#">
               <img
-                src="assets/images/icon-facebook.svg"
+                src="../dist/assets/images/icon-facebook.svg"
                 alt="Facebook"
                 class="h-4"
               />
             </a>
             <a href="#">
               <img
-                src="assets/images/icon-youtube.svg"
+                src="../dist/assets/images/icon-youtube.svg"
                 alt="YouTube"
                 class="h-4"
               />
             </a>
             <a href="#">
               <img
-                src="assets/images/icon-twitter.svg"
+                src="../dist/assets/images/icon-twitter.svg"
                 alt="Twitter"
                 class="h-4"
               />
             </a>
             <a href="#">
               <img
-                src="assets/images/icon-pinterest.svg"
+                src="../dist/assets/images/icon-pinterest.svg"
                 alt="Pinterest"
                 class="h-4"
               />
             </a>
             <a href="#">
               <img
-                src="assets/images/icon-instagram.svg"
+                src="../dist/assets/images/icon-instagram.svg"
                 alt="Instagram"
                 class="h-4"
               />
@@ -366,5 +391,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="../dist/script.js"></script>
   </body>
 </html>

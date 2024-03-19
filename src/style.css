@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html,
+  body {
+    @apply font-montserrat text-themeColor2Dark;
+  }
+}
+
 @layer components {
   a,
   button {
@@ -12,15 +19,38 @@
   .nav__btn {
     @apply bg-transparent rounded-full py-1 px-3 text-themeColor2Dark hover:bg-themeColor1Light hover:text-white;
   }
+
+  .menu__btn {
+    @apply relative w-[24px] h-[24px] cursor-pointer transition-all duration-[0.25s] outline-none;
+  }
+  .menu__btn--top,
+  .menu__btn--middle,
+  .menu__btn--bottom {
+    @apply absolute top-0 left-0 w-[24px] h-[2px] bg-black rotate-0 origin-center transition-all duration-500;
+  }
+  .menu__btn--middle {
+    @apply translate-y-[7px] origin-left duration-200;
+  }
+  .menu__btn--bottom {
+    @apply translate-y-[14px];
+  }
+
+  .open {
+    @apply rotate-90 translate-y-0;
+  }
+  .open .menu__btn--top {
+    @apply rotate-45 translate-y-[5px];
+  }
+  .open .menu__btn--middle {
+    @apply w-0;
+  }
+  .open .menu__btn--bottom {
+    @apply -rotate-45 translate-y-[5px];
+  }
 }
 
 @layer utilities {
   .name__text {
     @apply text-themeColor1 font-medium uppercase;
   }
-}
-
-html,
-body {
-  @apply font-montserrat text-themeColor2Dark;
 }

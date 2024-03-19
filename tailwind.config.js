@@ -2,7 +2,7 @@
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
-    theme: {
+    screens: {
       sm: '480px',
       md: '768px',
       lg: '976px',
@@ -18,6 +18,13 @@ module.exports = {
         themeColor2Dark: 'hsl(233, 12%, 13%)',
         themeColor2Gray: 'hsl(227, 12%, 61%)',
         themeGrayLight: 'hsl(0, 0%, 98%)',
+      },
+      backgroundImage: {
+        body: "url('../dist/assets/images/bg-tablet-pattern.svg')",
+        'cta-desktop':
+          "url('../dist/assets/images/bg-simplify-section-desktop.svg')",
+        'cta-mobile':
+          "url('../dist/assets/images/bg-simplify-section-mobile.svg')",
       },
     },
     fontFamily: {
